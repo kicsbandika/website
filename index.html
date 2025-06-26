@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red, Black & White Theme Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="bg-black text-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-red-accent tracking-wider rounded-md px-2 py-1">YOUR LOGO</a>
+            <nav class="hidden md:flex space-x-8" id="desktop-nav">
+                <a href="#home" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Home</a>
+                <a href="#services" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Services</a>
+                <a href="#features" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Features</a>
+                <a href="#pricing" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Pricing</a>
+                <a href="#testimonials" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Testimonials</a>
+                <a href="#team" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Team</a>
+                <a href="#faq" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">FAQ</a>
+                <a href="#about" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">About Us</a>
+                <a href="#contact" class="text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i> <!-- Hamburger icon for mobile -->
+            </button>
+        </div>
+        <!-- Mobile Menu (initially hidden) -->
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-black mt-2 pb-4">
+            <div class="flex flex-col items-center space-y-3">
+                <a href="#home" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Home</a>
+                <a href="#services" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Services</a>
+                <a href="#features" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Features</a>
+                <a href="#pricing" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Pricing</a>
+                <a href="#testimonials" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Testimonials</a>
+                <a href="#team" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Team</a>
+                <a href="#faq" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">FAQ</a>
+                <a href="#about" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">About Us</a>
+                <a href="#contact" class="block text-white hover:text-red-accent transition duration-300 rounded-md px-3 py-2 w-full text-center">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="relative section-dark text-center py-20 md:py-32 overflow-hidden">
+            <!-- Background Image -->
+            <div class="hero-background-image"></div>
+            <!-- Background overlay for visual effect -->
+            <div class="absolute inset-0 bg-gradient-to-br from-black to-gray-900 opacity-80 z-0"></div> <!-- Adjusted opacity for readability -->
+
+            <div class="container mx-auto px-4 z-10 relative">
+                <i class="fas fa-rocket text-red-accent text-6xl mb-6 animate-bounce"></i>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Ignite Your <span class="text-red-accent">Vision</span>. Power Your Success.
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-gray-300">
+                    We deliver cutting-edge solutions designed to transform your ideas into reality. Experience innovation, reliability, and unparalleled support.
+                </p>
+                <div class="space-x-4">
+                    <a href="#features" class="btn-primary">Explore Solutions</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-dark py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    Our <span class="text-red-accent">Services</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-code text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Web Development</h3>
+                        <p class="text-gray-400">
+                            Crafting responsive, high-performance websites tailored to your business needs.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-chart-line text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Digital Marketing</h3>
+                        <p class="text-gray-400">
+                            Driving traffic and conversions through strategic SEO, SEM, and social media campaigns.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-palette text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">UI/UX Design</h3>
+                        <p class="text-gray-400">
+                            Creating intuitive and engaging user interfaces that captivate your audience.
+                        </p>
+                    </div>
+                </div>
+                <!-- New row of services -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-server text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Cloud Solutions</h3>
+                        <p class="text-gray-400">
+                            Scalable and secure cloud infrastructure to power your applications and data.
+                        </p>
+                    </div>
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-mobile-alt text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Mobile App Development</h3>
+                        <p class="text-gray-400">
+                            Building native and cross-platform mobile applications for iOS and Android.
+                        </p>
+                    </div>
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-shield-alt text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Cybersecurity Consulting</h3>
+                        <p class="text-gray-400">
+                            Protecting your digital assets with expert security audits and strategic defense.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Existing) -->
+        <section id="features" class="section-light-dark py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    Our <span class="text-red-accent">Core</span> Features
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-check-circle text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Robust Performance</h3>
+                        <p class="text-gray-400">
+                            Experience lightning-fast speeds and unparalleled stability, ensuring your platform is always responsive.
+                        </p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-lock text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Advanced Security</h3>
+                        <p class="text-gray-400">
+                            Your data's safety is our priority. Benefit from multi-layered security protocols and continuous monitoring.
+                        </p>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-headset text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">24/7 Support</h3>
+                        <p class="text-gray-400">
+                            Our dedicated team is always ready to assist you, ensuring a smooth and hassle-free experience.
+                        </p>
+                    </div>
+                </div>
+                <!-- New row of features -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-brain text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">AI Integration</h3>
+                        <p class="text-gray-400">
+                            Leverage artificial intelligence to automate tasks, analyze data, and enhance user experiences.
+                        </p>
+                    </div>
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-lightbulb text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Innovation Driven</h3>
+                        <p class="text-gray-400">
+                            We stay ahead of trends, integrating the latest technologies to keep you competitive.
+                        </p>
+                    </div>
+                    <div class="bg-card-gradient rounded-xl p-8 transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-hands-helping text-red-accent text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Client Partnership</h3>
+                        <p class="text-gray-400">
+                            Collaborative approach, working closely with you to achieve shared goals and vision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section-dark py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    Our <span class="text-red-accent">Flexible</span> Pricing
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <!-- Pricing Card 1: Basic -->
+                    <div class="pricing-card">
+                        <h3 class="text-3xl font-bold text-white mb-4">Basic Plan</h3>
+                        <p class="text-gray-400 mb-6">Perfect for individuals & small projects</p>
+                        <p class="price">$29<span>/month</span></p>
+                        <ul class="text-lg mb-8">
+                            <li><i class="fas fa-check"></i> 10 GB Storage</li>
+                            <li><i class="fas fa-check"></i> 1 Website</li>
+                            <li><i class="fas fa-check"></i> Basic Support</li>
+                            <li><i class="fas fa-times text-gray-500"></i> Advanced Analytics</li>
+                            <li><i class="fas fa-times text-gray-500"></i> Priority Support</li>
+                        </ul>
+                        <a href="#" class="btn-primary">Choose Plan</a>
+                    </div>
+
+                    <!-- Pricing Card 2: Pro (Featured) -->
+                    <div class="pricing-card featured transform scale-105">
+                        <h3 class="text-3xl font-bold text-white mb-4">Pro Plan</h3>
+                        <p class="text-gray-400 mb-6">Ideal for growing businesses</p>
+                        <p class="price">$59<span>/month</span></p>
+                        <ul class="text-lg mb-8">
+                            <li><i class="fas fa-check"></i> 50 GB Storage</li>
+                            <li><i class="fas fa-check"></i> 5 Websites</li>
+                            <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                            <li><i class="fas fa-check"></i> Premium Support</li>
+                            <li><i class="fas fa-times text-gray-500"></i> 24/7 Phone Support</li>
+                        </ul>
+                        <a href="#" class="btn-primary">Choose Plan</a>
+                    </div>
+
+                    <!-- Pricing Card 3: Enterprise -->
+                    <div class="pricing-card">
+                        <h3 class="text-3xl font-bold text-white mb-4">Enterprise Plan</h3>
+                        <p class="text-gray-400 mb-6">For large-scale operations</p>
+                        <p class="price">$99<span>/month</span></p>
+                        <ul class="text-lg mb-8">
+                            <li><i class="fas fa-check"></i> Unlimited Storage</li>
+                            <li><i class="fas fa-check"></i> Unlimited Websites</li>
+                            <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                            <li><i class="fas fa-check"></i> 24/7 Phone Support</li>
+                        </ul>
+                        <a href="#" class="btn-primary">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    What Our <span class="text-red-accent">Clients Say</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial Card 1 -->
+                    <div class="testimonial-card rounded-xl shadow-lg">
+                        <div class="rating flex justify-center mb-4 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Working with this team has been an absolute game-changer for our business. Their expertise and dedication are truly unparalleled. Highly recommended!"
+                        </blockquote>
+                        <p class="author text-right">- Jane Doe, CEO of Example Corp</p>
+                    </div>
+                    <!-- Testimonial Card 2 -->
+                    <div class="testimonial-card rounded-xl shadow-lg">
+                        <div class="rating flex justify-center mb-4 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <blockquote>
+                            "The solutions provided were exactly what we needed. Fast, secure, and incredibly well-supported. We've seen significant growth since launch."
+                        </blockquote>
+                        <p class="author text-right">- John Smith, Founder of Startup X</p>
+                    </div>
+                    <!-- Testimonial Card 3 -->
+                    <div class="testimonial-card rounded-xl shadow-lg">
+                        <div class="rating flex justify-center mb-4 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Exceptional design and seamless functionality. Our users love the new interface, and our team appreciates the smooth development process."
+                        </blockquote>
+                        <p class="author text-right">- Emily White, Marketing Director</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="section-light-dark py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    Meet Our <span class="text-red-accent">Team</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Team Member 1 -->
+                    <div class="bg-card-gradient rounded-xl p-6">
+                        <img src="https://placehold.co/150x150/ff0000/ffffff?text=Member+1" alt="Team Member 1" class="rounded-full mx-auto mb-4 border-2 border-red-accent">
+                        <h3 class="text-xl font-bold text-white mb-1">Alice Johnson</h3>
+                        <p class="text-red-accent mb-2">CEO & Founder</p>
+                        <p class="text-gray-400 text-sm">Visionary leader guiding our mission and strategy.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-card-gradient rounded-xl p-6">
+                        <img src="https://placehold.co/150x150/ff0000/ffffff?text=Member+2" alt="Team Member 2" class="rounded-full mx-auto mb-4 border-2 border-red-accent">
+                        <h3 class="text-xl font-bold text-white mb-1">Bob Williams</h3>
+                        <p class="text-red-accent mb-2">Lead Developer</p>
+                        <p class="text-gray-400 text-sm">Mastermind behind our robust and scalable solutions.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-card-gradient rounded-xl p-6">
+                        <img src="https://placehold.co/150x150/ff0000/ffffff?text=Member+3" alt="Team Member 3" class="rounded-full mx-auto mb-4 border-2 border-red-accent">
+                        <h3 class="text-xl font-bold text-white mb-1">Carol Davis</h3>
+                        <p class="text-red-accent mb-2">Chief Designer</p>
+                        <p class="text-gray-400 text-sm">Bringing creativity and user-centric design to life.</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="bg-card-gradient rounded-xl p-6">
+                        <img src="https://placehold.co/150x150/ff0000/ffffff?text=Member+4" alt="Team Member 4" class="rounded-full mx-auto mb-4 border-2 border-red-accent">
+                        <h3 class="text-xl font-bold text-white mb-1">David Lee</h3>
+                        <p class="text-red-accent mb-2">Marketing Manager</p>
+                        <p class="text-gray-400 text-sm">Connecting our innovations with a global audience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-dark py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    Frequently Asked <span class="text-red-accent">Questions</span>
+                </h2>
+                <div class="max-w-3xl mx-auto">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What services do you offer?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a comprehensive suite of services including web development, digital marketing (SEO, SEM, social media), and UI/UX design. Our goal is to provide end-to-end solutions for your digital presence.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How does your pricing work?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our pricing is structured into flexible plans: Basic, Pro, and Enterprise. Each plan is designed to cater to different needs, from individuals to large corporations. You can find detailed features and pricing on our "Pricing" section.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What sets you apart from competitors?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We combine cutting-edge technology with a human-centric approach. Our commitment to robust performance, advanced security, and 24/7 dedicated support ensures an unparalleled client experience. We focus on long-term partnerships and measurable results.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can you work with existing projects?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we can seamlessly integrate with and enhance your existing projects. Our team has extensive experience in migrating, optimizing, and scaling various platforms. Contact us to discuss your specific requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (Existing) -->
+        <section id="about" class="section-light-dark py-16 md:py-24">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">
+                        Who We <span class="text-red-accent">Are</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        We are a passionate team of innovators dedicated to crafting exceptional digital experiences. With years of expertise, we specialize in delivering high-quality, scalable, and user-centric solutions that empower businesses and individuals.
+                    </p>
+                    <p class="text-lg text-gray-300">
+                        Our mission is to bridge the gap between complex technology and intuitive usability, making powerful tools accessible to everyone. We believe in transparency, collaboration, and continuous improvement.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/333333/ffffff?text=About+Us+Image" alt="About Us" class="rounded-xl shadow-lg w-full h-auto object-cover border border-red-accent">
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="section-dark py-20 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+                    Ready to <span class="text-red-accent">Transform</span> Your Business?
+                </h2>
+                <p class="text-xl md:text-2xl max-w-4xl mx-auto mb-10 text-gray-300">
+                    Don't wait. Unlock your full potential with our bespoke digital solutions. Let's start building your success story today.
+                </p>
+                <a href="#contact" class="btn-primary text-xl px-8 py-4">Get a Free Consultation <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </section>
+
+        <!-- Contact Section (Existing) -->
+        <section id="contact" class="section-light-dark py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    <span class="text-red-accent">Contact</span> Us
+                </h2>
+                <div class="max-w-xl mx-auto bg-card-gradient rounded-xl p-8 md:p-12">
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-white text-lg font-semibold mb-2 text-left">Your Name</label>
+                            <input type="text" id="name" name="name" class="input-field" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-white text-lg font-semibold mb-2 text-left">Your Email</label>
+                            <input type="email" id="email" name="email" class="input-field" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-white text-lg font-semibold mb-2 text-left">Message</label>
+                            <textarea id="message" name="message" rows="5" class="input-field" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="bg-black py-8 text-sm border-t border-gray-800">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Footer Column 1: Logo & About -->
+            <div>
+                <a href="#" class="text-3xl font-extrabold text-red-accent tracking-wider mb-4 inline-block">YOUR LOGO</a>
+                <p class="text-gray-400 mb-4">
+                    Innovating the future, one solution at a time. We are committed to excellence and digital transformation.
+                </p>
+                <p class="text-gray-500">&copy; 2025 Your Company. All rights reserved.</p>
+            </div>
+
+            <!-- Footer Column 2: Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#services" class="footer-link">Services</a></li>
+                    <li><a href="#features" class="footer-link">Features</a></li>
+                    <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                    <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                    <li><a href="#team" class="footer-link">Team</a></li>
+                    <li><a href="#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="#about" class="footer-link">About Us</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3: Follow Us & Contact Info -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
+                <div class="flex justify-center md:justify-start space-x-4 mb-4">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">Contact Info</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fas fa-map-marker-alt text-red-accent mr-2"></i> 123 Main St, Anytown, USA 12345</li>
+                    <li><i class="fas fa-phone text-red-accent mr-2"></i> +1 (123) 456-7890</li>
+                    <li><i class="fas fa-envelope text-red-accent mr-2"></i> info@yourcompany.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 text-gray-500 text-center">
+            <p><a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+        </div>
+    </footer>
+
+  
+</body>
+</html>

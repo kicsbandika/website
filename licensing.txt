@@ -1,0 +1,36 @@
+--- Theme Licensing Information ---
+
+This theme is licensed under the Envato Market Regular License (or Extended License, if purchased as such).
+For full details, please refer to:
+https://themeforest.net/licenses/standard
+
+--- Third-Party Licenses & Attribution ---
+
+This theme utilizes the following third-party resources, each covered by their respective licenses:
+
+1.  **Tailwind CSS**
+    * License: MIT License
+    * Source: https://tailwindcss.com/
+    * Copyright (c) Tailwind Labs, Inc.
+
+2.  **Google Fonts - Inter**
+    * License: SIL Open Font License (OFL)
+    * Source: https://fonts.google.com/specimen/Inter
+    * Copyright (c) 2017 The Inter Project Authors (https://github.com/rsms/inter)
+
+3.  **Font Awesome**
+    * License: Font Awesome Free License (https://fontawesome.com/license/free)
+        * Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+        * Fonts: SIL OFL 1.1 License (https://opensource.org/licenses/OFL-1.1)
+        * Code: MIT License (https://opensource.org/licenses/MIT)
+    * Source: https://fontawesome.com/
+    * Attribution: Font Awesome Free by @fontawesome - https://fontawesome.com
+
+4.  **Placeholder Image Service**
+    * Service: placehold.co
+    * Note: Images from placehold.co are used for demonstration purposes only. They are intended to be replaced with your own copyrighted or licensed images before production use. No specific license is required for the placeholder service itself, but ensure all final image assets have proper licensing or are your own.
+
+--- Important Notes ---
+
+* All demo images (those from placehold.co or any other placeholders) are for preview purposes only and are NOT included in the final theme download package for commercial use. You must replace them with your own licensed images.
+* This documentation and the theme itself may refer to CDN links for simplicity in the demo. For production use or if you prefer self-hosting, please refer to the respective official documentation for downloading and including the necessary library files locally.

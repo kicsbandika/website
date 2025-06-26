@@ -1,0 +1,281 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff; /* Default white text */
+            line-height: 1.6;
+        }
+
+        /* Reusable button styles */
+        .btn-primary {
+            background: linear-gradient(45deg, #ff0000, #cc0000); /* Red gradient */
+            color: #ffffff;
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #cc0000, #ff3333); /* Darker red on hover */
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(204, 0, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #ff0000; /* Red text */
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border: 2px solid #ff0000; /* Red border */
+            border-radius: 0.75rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .btn-secondary:hover {
+            background-color: #ff0000; /* Red background on hover */
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Section backgrounds for contrast */
+        .section-dark {
+            background-color: #1a1a1a;
+        }
+        .section-light-dark {
+            background-color: #2c2c2c; /* Lighter black/dark grey */
+        }
+        .section-white {
+            background-color: #ffffff;
+            color: #1a1a1a; /* Dark text on white background */
+        }
+
+        /* Specific styles for elements to ensure consistent theming */
+        .text-red-accent {
+            color: #ff0000;
+        }
+        .border-red-accent {
+            border-color: #ff0000;
+        }
+        .bg-card-gradient {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1f1f1f 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .bg-card-gradient:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Input field styling */
+        .input-field {
+            background-color: #1f1f1f;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            transition: border-color 0.3s ease;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #ff0000;
+        }
+
+        /* Testimonial specific styles */
+        .testimonial-card {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centered content within testimonial card */
+        }
+        .testimonial-card blockquote {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+        .testimonial-card .author {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .testimonial-card .rating .fas.fa-star,
+        .testimonial-card .rating .fas.fa-star-half-alt {
+            color: #ff0000; /* Red stars */
+        }
+
+        /* Mobile menu specific styles */
+        .mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .mobile-menu.active {
+            max-height: 500px; /* Adjust as needed to fit content */
+        }
+        /* Icon transition for hamburger/close */
+        #mobile-menu-button i {
+            transition: transform 0.3s ease-in-out;
+        }
+        #mobile-menu-button.active i {
+            transform: rotate(90deg); /* Rotate for close icon effect */
+        }
+
+        /* Hero Background Image */
+        .hero-background-image {
+            background-image: url('https://placehold.co/1920x1080/0d0d0d/404040?text=Background+Image'); /* Darker placeholder */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            inset: 0;
+            z-index: -1; /* Place behind content */
+            filter: brightness(0.6); /* Darken the image more for better text contrast */
+        }
+        
+        /* Pricing card specific styles */
+        .pricing-card {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1f1f1f 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+        .pricing-card.featured {
+            border-color: #ff0000;
+            background: linear-gradient(135deg, #3b3b3b 0%, #2a2a2a 100%);
+            position: relative;
+            z-index: 10;
+        }
+        .pricing-card.featured .btn-primary {
+             background: linear-gradient(45deg, #ff3333, #e60000);
+        }
+        .pricing-card.featured .btn-primary:hover {
+            background: linear-gradient(45deg, #e60000, #ff6666);
+        }
+        .pricing-card ul li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #cccccc;
+        }
+        .pricing-card ul li .fas {
+            margin-right: 0.5rem;
+            color: #ff0000;
+        }
+        .pricing-card .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .pricing-card .price span {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #cccccc;
+        }
+
+        /* FAQ specific styles */
+        .faq-item {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1f1f1f 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 1.125rem;
+            transition: background-color 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #3a3a3a;
+        }
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 1.5rem;
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            color: #cccccc;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 150px; /* Adjust as needed for content */
+            padding-bottom: 1.5rem;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* Scroll to Top Button */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 1.5rem; /* 24px */
+            right: 1.5rem; /* 24px */
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: #ffffff;
+            padding: 1rem 1.25rem; /* Slightly more vertical padding for button shape */
+            border-radius: 9999px; /* Fully rounded */
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+            cursor: pointer;
+            z-index: 1000; /* Ensure it's on top of other content */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.2s ease-in-out;
+            border: none;
+            font-size: 1.5rem; /* Larger icon */
+            display: flex; /* Use flexbox to center content if needed */
+            justify-content: center;
+            align-items: center;
+        }
+
+        #scrollToTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #scrollToTopBtn:hover {
+            background: linear-gradient(45deg, #cc0000, #ff3333);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(204, 0, 0, 0.5);
+        }
+
+        /* Footer specific styles */
+        .footer-link {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+        .footer-link:hover {
+            color: #ff0000; /* Red on hover */
+        }
+        .social-icon {
+            color: #ffffff;
+            font-size: 1.5rem;
+            transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .social-icon:hover {
+            color: #ff0000; /* Red on hover */
+            transform: translateY(-3px);
+        }
